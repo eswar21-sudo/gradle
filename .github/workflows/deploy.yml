@@ -56,6 +56,6 @@ jobs:
 
     - name: Deploy with Helm
       run: |
-      helm upgrade  my-app oci://=${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}\
+      helm upgrade  my-app oci://=${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }} \
                 --set image.repository=${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }} \
                           --set image.tag=${{ env.IMAGE_TAG }}
