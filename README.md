@@ -1,7 +1,15 @@
 # gradle
 
-Create GitHub secrets in your repo:
+✅ Prerequisites
+An ECR repository already created.
 
+An EKS cluster already set up and configured with kubectl and helm.
+
+The GitHub repository connected to AWS (via IAM OIDC or AWS_ACCESS_KEY_ID + AWS_SECRET_ACCESS_KEY secrets).
+
+A working Dockerfile, Helm chart, and build.gradle.
+
+# Create GitHub secrets in your repo:
 AWS_ACCESS_KEY_ID
 
 AWS_SECRET_ACCESS_KEY
