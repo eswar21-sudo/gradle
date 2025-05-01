@@ -25,7 +25,7 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: Build JAR
-      run: ./gradlew clean build
+      run: ./gradlew clean jar
 
     - name: List build/libs directory
       run: ls -lh build/libs
