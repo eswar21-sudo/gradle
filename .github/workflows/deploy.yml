@@ -56,7 +56,7 @@ jobs:
 
     - name: Deploy with Helm
       run: |
-        helm upgrade my-app oci://${{ steps.login-ecr.outputs.registry }}/sample-app \
+        helm upgrade my-app oci://${{ steps.login-ecr.outputs.registry }}/my-app \
           --namespace default
 
 
