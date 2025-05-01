@@ -1,4 +1,4 @@
-name: Deploy to EKS from Gradle
+name: Deploy to EKS from Gradle.
 
 on:
   push:
