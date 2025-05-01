@@ -1,0 +1,10 @@
+image:
+  repository: ""
+  tag: ""
+
+service:
+  type: ClusterIP
+  port: 8080
+
+deployment:
+  replicas: 2
